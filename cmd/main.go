@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/Thibaux/questions-api/database"
-	"github.com/Thibaux/questions-api/routes"
+	"questions-api/database"
+	"questions-api/routes"
 )
 
 func main() {

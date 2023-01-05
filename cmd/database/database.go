@@ -5,7 +5,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/Thibaux/questions-api/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm"
