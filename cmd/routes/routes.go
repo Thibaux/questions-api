@@ -1,9 +1,11 @@
-package main
+package routes
 
 import (
 	"github.com/gofiber/fiber/v2"
+
+    "github.com/Thibaux/questions-api/cmd/handlers"
 )
 
-func getRoutes(app *fiber.App) {
-	app.Get("/", handlers.Home)
+func GetRoutes(app *fiber.App) {
+    app.Get("/", handlers.Index)
 }

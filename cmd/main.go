@@ -2,15 +2,15 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"questions-api/database"
-	"questions-api/routes"
+    "github.com/Thibaux/questions-api/cmd/database"
+    "github.com/Thibaux/questions-api/cmd/routes"
 )
 
 func main() {
 	database.ConnectDb()
 	app := fiber.New()
 
-	routes.getRoutes(app)
+    routes.GetRoutes(app)
 
 	app.Listen(":3000")
 }

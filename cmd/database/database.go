@@ -8,6 +8,8 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm"
+
+    "github.com/Thibaux/questions-api/cmd/models"
 )
 
 type Dbinstance struct {
@@ -18,7 +20,7 @@ var DB Dbinstance
 
 func ConnectDb() {
 	dsn := fmt.Sprintf(
-		"host=db user=%s password=%s dbname=%s port=5432 sslmode=disable TimeZone=",
+        "host=db user=%s password=%s dbname=%s port=5432 sslmode=disable TimeZone=Asia/Shanghai",
 		os.Getenv("DB_USER"),
 		os.Getenv("DB_PASSWORD"),
 		os.Getenv("DB_NAME"),
